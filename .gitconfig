@@ -1,0 +1,8 @@
+[user]
+	name = Fred Chambers
+	email = Fred.chambers62@my.benedict.edu
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
